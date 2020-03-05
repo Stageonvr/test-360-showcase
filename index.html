@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>360 Deg Product Viewer</title>
+    <link rel = "stylesheet" type = "text/css" href = "360style.css" />
+    <script src="pdt360DegViewer.js"></script>
+</head>
+<body>
+    <div id="pdtViewer">
+        <div id="car3"></div>
+    </div>
+    <div id="dummy"></div>
+    <script>
+        var path = './img/';
+        //pdt360DegViewer(imgDivid, count, path, imgType, playable, autoPlay, drag, mouseMove, buttonNavigation, keyNavigation, scroll);
+        pdt360DegViewer('car3', 51, path, 'png', false, false, true, false, false, false, false);   //draggable
+    </script>
+</body>
+</html>
